@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Complete Form</title>
+</head>
+<body>
+
+<form action="/submit" method="POST">
+
+    <!-- Text -->
+    <label>Name:</label>
+    <input type="text" name="name"><br><br>
+
+    <!-- Email -->
+    <label>Email:</label>
+    <input type="email" name="email"><br><br>
+
+    <!-- Password -->
+    <label>Password:</label>
+    <input type="password" name="password"><br><br>
+
+    <!-- Number -->
+    <label>Age:</label>
+    <input type="number" name="age"><br><br>
+
+    <!-- Phone -->
+    <label>Phone:</label>
+    <input type="tel" name="phone"><br><br>
+
+    <!-- URL -->
+    <label>Website:</label>
+    <input type="url" name="website"><br><br>
+
+    <!-- Date -->
+    <label>Date of Birth:</label>
+    <input type="date" name="dob"><br><br>
+
+    <!-- Time -->
+    <label>Time:</label>
+    <input type="time" name="time"><br><br>
+
+    <!-- Color -->
+    <label>Favorite Color:</label>
+    <input type="color" name="color"><br><br>
+
+    <!-- Range -->
+    <label>Volume:</label>
+    <input type="range" name="volume" min="0" max="100"><br><br>
+
+    <!-- Radio -->
+    <label>Gender:</label>
+    <input type="radio" name="gender" value="male"> Male
+    <input type="radio" name="gender" value="female"> Female<br><br>
+
+    <!-- Checkbox -->
+    <label>Skills:</label>
+    <input type="checkbox" name="skills" value="C"> C
+    <input type="checkbox" name="skills" value="JS"> JS
+    <input type="checkbox" name="skills" value="Python"> Python<br><br>
+
+    <!-- File -->
+    <label>Upload File:</label>
+    <input type="file" name="file"><br><br>
+
+    <!-- Hidden -->
+    <input type="hidden" name="userid" value="12345">
+
+    <!-- Select Dropdown -->
+    <label>Country:</label>
+    <select name="country">
+        <option>India</option>
+        <option>Canada</option>
+        <option>USA</option>
+    </select><br><br>
+
+    <!-- Textarea -->
+    <label>Message:</label><br>
+    <textarea name="message" rows="4" cols="30"></textarea><br><br>
+
+    <!-- Buttons -->
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+
+</form>
+
+</body>
+</html>

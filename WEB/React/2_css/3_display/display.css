@@ -1,0 +1,16 @@
+.block{
+    display:block;
+    background:lightblue;
+    /* width:500px; */
+    /* height:200px; */
+}
+.inline {
+  display: inline;
+  background: lightgreen;
+  width: 500px; /* this will NOT work */
+}
+.inline-block {
+  display: inline-block;
+  background: lightcoral;
+  width: 200px; /* this WILL work */
+}

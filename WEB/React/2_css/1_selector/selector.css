@@ -1,0 +1,168 @@
+/* Element Selector */
+p {
+  color: blue;
+}
+
+/* Class selector */
+.highlight {
+  color: red;
+}
+
+/* ID selector */
+#header {
+  background-color: black;
+}
+/* Group selector */
+h1, p, div {
+  color: green;
+}
+/* Descendent selector */
+div p {
+  color: purple;
+}
+/* Child selector(only direct) */
+div > p {
+  color: orange;
+}
+/* Adjacent sibling (Next immediate element:)*/
+h1 + p {
+  color: red;
+}
+
+/* general sibling */
+h1 ~ p {
+  color: blue;
+}
+
+/* attribute Selector */
+input[type="text"] {
+  border: 1px solid black;
+}
+
+/* pseudo-classes.css */
+
+/* Links */
+a:link {
+  color: blue;        /* unvisited link */
+}
+a:visited {
+  color: purple;      /* visited link */
+}
+a:hover {
+  color: red;         /* when mouse hovers */
+}
+a:active {
+  color: orange;      /* when clicked */
+}
+
+/* Buttons */
+button:hover {
+  background-color: lightblue;
+}
+button:active {
+  background-color: darkblue;
+  color: white;
+}
+button:focus {
+  outline: 2px solid red;
+}
+
+/* Inputs */
+input:focus {
+  border: 2px solid green;
+}
+input:invalid {
+  border: 2px solid red;
+}
+input:valid {
+  border: 2px solid blue;
+}
+
+/* Structural pseudo-classes */
+li:first-child {
+  font-weight: bold;
+}
+li:last-child {
+  font-style: italic;
+}
+li:nth-child(odd) {
+  background-color: #f0f0f0;
+}
+li:nth-child(even) {
+  background-color: #e0e0e0;
+}
+li:nth-child(3n) {
+  color: darkgreen;
+}
+
+/* Form pseudo-classes */
+input:checked {
+  background-color: yellow;
+}
+input:disabled {
+  background-color: #ccc;
+}
+
+/* Other useful ones */
+p:hover {
+  color: teal;
+}
+div:empty {
+  border: 1px dashed red;
+}
+
+/* ===== Pseudo-elements ===== */
+
+/* 1. ::first-letter - style the first letter of an element */
+p::first-letter {
+  font-size: 3em;
+  font-weight: bold;
+  color: crimson;
+}
+
+/* 2. ::first-line - style the first line of a block */
+p::first-line {
+  font-variant: small-caps;
+  color: darkblue;
+}
+
+/* 3. ::before - insert content before an element */
+p::before {
+  content: "🔥 ";
+  font-weight: bold;
+}
+
+/* 4. ::after - insert content after an element */
+p::after {
+  content: " ✨";
+  font-style: italic;
+}
+
+/* 5. ::selection - style text when highlighted */
+p::selection {
+  background-color: yellow;
+  color: black;
+}
+
+/* 6. ::placeholder - style input placeholder text */
+input::placeholder {
+  color: gray;
+  font-style: italic;
+}
+
+/* 7. ::marker - style list bullets/numbers */
+li::marker {
+  color: red;
+  font-size: 1.2em;
+}
+
+/* 8. ::backdrop - style background behind modals (like <dialog>) */
+dialog::backdrop {
+  background-color: rgba(0,0,0,0.5);
+}
+
+/* 9. ::cue - for subtitles in video (rarely used) */
+::cue {
+  color: lime;
+  background: black;
+}
